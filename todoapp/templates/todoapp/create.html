@@ -1,0 +1,8 @@
+<h1>Create Todo</h1>
+<h2> {{ error }}</h2>
+<form method="post">
+
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">sign Up</button>
+</form>
